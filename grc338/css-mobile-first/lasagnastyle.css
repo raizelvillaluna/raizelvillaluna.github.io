@@ -1,0 +1,79 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+header {
+    background-color: rgb(255, 124, 36);
+    font-family: Sutro, serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    color: rgb(255, 236, 224);
+    padding: 1em 1.3rem 0.3em;
+
+}
+
+h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+    color:rgb(252, 209, 184);
+    padding: 0.1em 1.3rem 1em;
+}
+
+figcaption {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    padding: 1em 1.3rem 1em;
+}
+
+h3 {
+    font-family: Sutro, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2em; 
+    color:rgb(255, 124, 36);
+    text-transform: uppercase;
+    padding: 0.1em 1.3rem 1em;
+    letter-spacing: 1px;
+}
+
+ul {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0.1em 1.3rem 1em;
+
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+ol {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0.1em 1.3rem 2em;
+
+}
+
+footer {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1em 1.3rem 1em;
+    background-color:rgb(255, 124, 36);
+    color:rgb(252, 209, 184);
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
