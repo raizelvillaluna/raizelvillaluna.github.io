@@ -1,0 +1,159 @@
+/*CSS DOCUMENT*/
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4em;
+    color: #222;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+div.container {
+    max-width: 40em;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section.personal-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+section.personal-info ul li {
+    margin-bottom: 1em;
+}
+
+section.personal-info ul li label {
+    display: block;
+    margin-bottom: 0.25em;
+    font-weight: normal;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4em;
+    border: 1px solid #e8e8e8;
+    background: #fcfcfc;
+    font-family: sans-serif;
+    color: #777;
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 6em;
+    background: #fcfcfc;
+    border: 1px solid #e8e8e8;
+    padding: 0.4em;
+    font-family: sans-serif;
+    color: #777;
+    resize: vertical;
+}
+
+@media only screen and (min-width: 48em) {
+    section.personal-info ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0.75em;
+    }
+
+    section.personal-info ul li label {
+        width: 8em;
+        margin-right: 0.5em;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    section.personal-info ul li input[type="text"],
+    section ul li input[type="email"],
+    section ul li input[type="tel"],
+    section ul li select {
+        flex: 1 1 auto;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    div.container {
+        margin: 1em auto;
+    }
+}
+
+ol {
+    list-style-position: outside;
+    padding-left: 2.5em;
+    margin-left: 0;
+}
+
+ol li {
+    margin-bottom: 0.5em;
+    text-indent: -1.5em;
+}
+
+.order ul,
+.method ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    list-style: none;
+}
+
+.order li,
+.method li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.order label,
+.method label {
+    margin-left: 0.25em;
+}
+
+@media (min-width: 48em) {
+    .order ul:first-of-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .order ul:first-of-type li {
+        flex: 0 0 20em;
+    }
+
+    .method ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .method li {
+        flex: 0 0 20em;
+    }
+}
+
+@media (min-width: 64em) {
+    .order h3 + p + ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .order h3 + p + ul li {
+        flex: 0 0 20em;
+    }
+}
