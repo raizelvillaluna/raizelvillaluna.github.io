@@ -1,0 +1,361 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Container */
+div.container, div.home-container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+div.home-container {
+    background-color: #ffffff;
+}
+
+/* Typography */
+body {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #101010;
+    background-color: #FFB3DE;
+}
+
+.story-page div.container{
+    background-color: #fff0f6;
+}
+
+h1, h2 {
+    font-family: serif;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+h1 img {
+    max-width: 20em;
+    margin: 0;
+    display: block;
+}
+
+h2 {
+    font-family: "dinosaur", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff3f7c;
+    border: 3px solid #FFB3DE;
+    background-color: #ffb3de;
+    border-radius: 20px;
+    padding: 0.1em 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    transform: all 0.5s ease;
+
+}
+
+h2:hover {
+    background-color: #72F0F3;
+    color: #2F1B8C;
+    border-color: #72F0F3;
+    transform: scale(1);
+
+}
+
+p {
+    margin-bottom: 1em;
+    padding: 0.1em 0.4em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0em;
+}
+
+nav li {
+    display: block;
+    margin-right: 1.5em;
+}
+
+@media (min-width: 48em) {  
+    nav li {
+        display: inline-block;
+        margin-right: 1.5em;
+    }
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    font-family: "dinosaur", sans-serif; /* playful pop for nav */
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #ff3f7c;
+    display: block;
+    padding: 0.1em 0;
+    transform: all 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #2F1B8C;
+    border: 3px solid #2F1B8C;
+    border-radius: 20px;
+    display: inline-block;
+    color: #FFB3DE;
+    transform: scale(1);
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section a {
+    display: inline;
+}
+
+/* Main story section */
+section.mainstory {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+
+section.mainstory h2 {
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+section.mainstory p {
+    font-size: 1.1em;
+}
+
+/* Secondary story sections */
+section.secondary {
+    margin-bottom: 0;
+    padding-bottom: 0em;
+}
+
+section.secondary h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+section.secondary figure {
+    margin-bottom: 1em;
+}
+
+
+/* Tertiary story sections */
+section.tertiary {
+    margin-bottom: 2em;
+    border-bottom: 2px solid #ff3f7c;
+    padding-bottom: 1em;
+}
+
+section.tertiary h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+section.tertiary:last-of-type {
+    border-bottom: none;
+    margin-bottom: 3em;
+}
+
+/* Article page styling */
+article {
+    margin-bottom: 3em;
+}
+
+article h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+article p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+article figure {
+    margin: 0;
+}
+
+article figcaption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+
+/* Aside styling for story page */
+aside {
+    padding: 0;
+    background-color:#ff3f7c;
+}
+
+.story-page aside p {
+    color: #ffffff;
+}
+
+aside h2 {
+    font-size: 1.3em;
+    text-align: left;
+    color: #FFB3DE;
+    border: solid 3px #ff3f7c;
+    background: none;
+    padding: 0.1em 0.3em;
+    transition: all 0.2s ease;
+}
+aside h2:hover {
+    background-color: #FFB3DE;
+    color: #ff3f7c;
+    border-color: #FFB3DE;
+    transform: scale(1);
+}
+
+aside section.secondary {
+    margin-bottom: 2em;
+}
+
+aside section.secondary:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    padding: 1em 0em 0em 0.7em;
+    text-align: center;
+    background-color: #2F1B8C;
+    color: #FFB3DE;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Figure elements */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    padding: 0.5em 0;
+}
+
+@media only screen and (min-width: 60em) {
+
+    div.home-container {
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    header,footer {
+    grid-column: 1/3;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.home-container aside {
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    div.container aside {
+        margin-top: 0;
+    }
+
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    section.mainstory a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+    
+    section.mainstory a figure img {
+        object-fit: cover;
+    }
+
+    section.mainstory a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.mainstory a p {
+        flex: 0 0 4em;
+    }
+
+    section.secondary {
+        display: flex;
+    }
+
+    section.secondary a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.secondary a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+    
+    section.secondary a figure img {
+        object-fit: cover;
+    }
+    
+    section.secondary a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.secondary a p {
+        flex: 0 0 4em;
+    }
+}
