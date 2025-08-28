@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Newsletter Signup | Surpriez</title>
+    <link rel="stylesheet" href="https://use.typekit.net/kox5dbn.css">
+</head>
+
+<body class="newsletter-page">
+    <div class="container">
+        <header>
+            <h1>
+                <a href="index.html">
+                    <img src="surpriezlogo.svg" alt="Surpriez Logo" />
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="photogallery.html">Artist & Design Spotlight</a></li>
+                    <li><a href="#">Collector Culture</a></li>
+                    <li><a href="#">Gallery & Reviews</a></li>
+                    <li><a href="#">Sustainability & Ethics</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="newsletter-container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <img src="mofusand-set.jpg" alt="Newsletter Visual" class="newsletter-image" />
+                <form class="newsletter-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <fieldset>
+                        <legend>Select the newsletters you want to receive:</legend>
+                        <label>
+                            <input type="checkbox" name="newsletter-type" value="trending">
+                            Trending News & Updates
+                        </label>
+                        <label>
+                            <input type="checkbox" name="newsletter-type" value="artist-spotlight">
+                            Artist & Design Spotlight
+                        </label>
+                        <label>
+                            <input type="checkbox" name="newsletter-type" value="collector-culture">
+                            Collector Culture & Reviews
+                        </label>
+                    </fieldset>
+                    
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
