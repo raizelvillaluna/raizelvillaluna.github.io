@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helpful Study Tips & Planning</title>
+
+  <!-- Google Fonts: Work Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Helpful Study Tips & Planning</h1>
+      <p>Learn how to study efficiently and Organize your tasks!</p>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="tips">Study Tips</button>
+      <button class="tab-btn" data-tab="planner">My Planner</button>
+      <button class="tab-btn" data-tab="progress">My Progress</button>
+    </nav>
+
+    <!-- Study Tips Section -->
+    <section class="tab-content" id="tips">
+      <div class="tips-grid">
+        <div class="tip-card">
+          <img src="pomodoroClock.png" alt="Pomodoro Timer" class="tip-icon">
+          <h3> Pomodoro Technique </h3>
+          <p>Work in focused 25-minute chunks followed by 5-minute breaks. After 4 cycles, take a longer 15-30 minute break. This method prevents burnout and keeps your mind fresh throughout long study sessions!</p>
+        </div>
+
+        <div class="tip-card">
+          <img src="prioritize.png" alt="Priority Mountain" class="tip-icon">
+          <h3> Prioritize Your Tasks </h3>
+          <p>Start with your most challenging or important tasks when your energy is at its peak. Tackle the hardest thing first, and everything else will feel easier by comparison!</p>
+        </div>
+
+        <div class="tip-card">
+          <img src="takeBreaks.png" alt="Relaxing Break" class="tip-icon">
+          <h3> Take Regular Breaks </h3>
+          <p>Your brain needs downtime to retain information. Step outside for fresh air, do some light stretching, or take a nap! Even 5 minutes away from your study materials can boost focus for hours!</p>
+        </div>
+
+        <div class="tip-card">
+          <img src="noPhone.png" alt="Phone in Timeout" class="tip-icon">
+          <h3> Create a Distraction-Free Zone</h3>
+          <p>Put your phone either in airplane mode or another room entirely. Use website blockers during study time and let friends know your focus hours. A distraction-free environment can double your productivity!</p>
+        </div>
+
+        <div class="tip-card">
+          <img src="studySpace.png" alt="Cozy Study Desk" class="tip-icon">
+          <h3> Design Your Perfect Study Space </h3>
+          <p>Create a dedicated study area that signals "focus time" to your brain. Good lighting, comfortable seating, plants, and personal touches make studying feel less like work and more like self-care.</p>
+        </div>
+
+        <div class="tip-card">
+          <img src="reviewIdea.png" alt="Cat with Idea" class="tip-icon">
+          <h3> Review and Reflect Often </h3>
+          <p>Don't just read! actively engage with material by summarizing, teaching concepts out loud, or creating flashcards. Review previous topics regularly to move information from short-term to long-term memory!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Planner Section -->
+    <section class="tab-content" id="planner" style="display:none;">
+      <div class="planner-window input-window">
+        <h3>Add a Task</h3>
+        <form id="task-form">
+          <input type="text" id="taskName" placeholder="Task Name" required>
+          <select id="priority" required>
+            <option value="">Priority</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <input type="number" id="time" placeholder="Minutes" required min="0">
+          <select id="category" required>
+            <option value="">Category</option>
+            <option value="Exam">Exam</option>
+            <option value="Reading">Reading</option>
+            <option value="Project">Project</option>
+            <option value="Homework">Homework</option>
+            <option value="Other">Other</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+
+      <div class="planner-window list-window">
+        <h3>My Tasks</h3>
+        <table id="taskTable">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Priority</th>
+              <th>Minutes</th>
+              <th>Category</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Progress Section -->
+<section class="tab-content" id="progress" style="display:none;">
+  <div class="progress-container">
+    <div class="progress-box">
+      <p class="label">Total Tasks</p>
+      <p class="number" id="totalTasks">0</p>
+    </div>
+    <div class="progress-box">
+      <p class="label">Completed</p>
+      <p class="number" id="completedTasks">0</p>
+    </div>
+    <div class="progress-box">
+      <p class="label">Remaining</p>
+      <p class="number" id="remainingTasks">0</p>
+    </div>
+    <div class="progress-box">
+      <p class="label">Minutes Completed</p>
+      <p class="number" id="completedMinutes">0</p>
+    </div>
+  </div>
+
+  <div class="progress-quote">
+    <p id="quote"> Small steps every day lead to big dreams realized. Keep planning, keep studying, keep growing! </p>
+  </div>
+
+  <button id="resetBtn">Start Fresh</button>
+</section>
+    </div>
+
+    <footer>
+        <p> All images are drawn by me! (raizel) </p>
+    </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
