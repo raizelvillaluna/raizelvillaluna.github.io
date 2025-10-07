@@ -1,0 +1,202 @@
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: linear-gradient(135deg, #ffeef4, #f0e6ff);
+  padding: 1.25em;
+  color: #654a70; /* cute purple for all text */
+}
+
+/* Container */
+.container {
+  max-width: 56em;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 0.9em;
+  box-shadow: 0 0.3em 1.25em rgba(0,0,0,0.1);
+  padding: 1.25em;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.6em;
+  border: none;
+  cursor: pointer;
+  background: #ffe6f0; 
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-btn.active {
+  background: #ffb6c1; 
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Tip Cards Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+/* Individual Tip Card */
+.tip-card {
+  background: #f8f4ff;
+  padding: 1em;
+  border-radius: 0.6em;
+  border: 2px dashed #ffb6c1; /* added dashed border */
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect: pink shadow */
+.tip-card:hover {
+  box-shadow: 0 0.5em 1em #ffc0cb;
+  transform: translateY(-0.1em);
+}
+
+/* Tip icons */
+.tip-icon {
+  width: 10em;
+  height: 10em;
+  object-fit: contain;
+  margin-bottom: 0.6em;
+}
+
+/* Planner Windows */
+.planner-window {
+  background: #f8f4ff;
+  border-radius: 0.6em;
+  border: 2px dashed #ffb6c1; /* added dashed border */
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-bottom: 1em;
+}
+
+input, select, button {
+  padding: 0.5em;
+  border: 1px solid #cccccc;
+  border-radius: 0.5em;
+}
+
+/* Task Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 0.6em;
+  text-align: center;
+}
+
+/* Action buttons */
+button.action {
+  margin: 0 0.2em;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+}
+
+/* Completed task row */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ========================
+   Progress Stats Section
+   ======================== */
+
+/* Progress Container */
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+/* Individual Stat Box */
+.progress-box {
+  flex: 1 1 45%;
+  background: #ffe6f0;
+  border: 2px dashed #ffb6c1; /* already had dashed border */
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.05);
+}
+
+/* Label */
+.progress-box .label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.3em;
+}
+
+/* Number */
+.progress-box .number {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ff69b4;
+  margin: 0;
+}
+
+/* Quote at the bottom */
+.progress-quote {
+  background: #ffd9e6;
+  border-radius: 1em;
+  border: 2px dashed #ffb6c1; /* added dashed border */
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #d63384;
+  box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.05);
+}
+
+/* Action Buttons */
+button.action, button {
+  padding: 0.8em 1.5em;
+  border-radius: 1em;
+  border: 2px dashed #ffb6c1;
+  background: #ffb6c1;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0.3em 0.5em rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #ffe6f0;
+  border-radius: 0.8em;
+  padding: 0.8em 1em;
+  text-align: center;
+  font-weight: 600;
+  color: #d63384;
+  margin-top: 1.5em;
+}
